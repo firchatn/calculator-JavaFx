@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculatrice.LayoutIndexController">
+   <children>
+      <SplitPane dividerPositions="0.19845360824742267" layoutX="3.0" layoutY="5.0" orientation="VERTICAL" prefHeight="390.0" prefWidth="592.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Label layoutX="228.0" layoutY="17.0" prefHeight="41.0" prefWidth="115.0" text="Resultat: " textFill="#eb0303">
+                     <font>
+                        <Font size="23.0" />
+                     </font></Label>
+                  <TextField id="resf" fx:id="resf" layoutX="372.0" layoutY="23.0" prefHeight="25.0" prefWidth="79.0" />
+                  <TextField id="eq" fx:id="res" layoutX="25.0" layoutY="20.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <GridPane layoutX="6.0" layoutY="47.0" prefHeight="181.0" prefWidth="580.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button id="un" mnemonicParsing="false" onAction="#un" text="1" />
+                        <Button id="deux" mnemonicParsing="false" onAction="#deux" text="2" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#trois" text="3" GridPane.columnIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#quatre" text="4" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#cinq" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#six" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#sett" text="7" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#huit" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#neuf" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#zero" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#resultat" prefHeight="25.0" prefWidth="88.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#plus" text="+" GridPane.columnIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#moin" prefHeight="25.0" prefWidth="30.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#fois" prefHeight="25.0" prefWidth="30.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#sur" prefHeight="25.0" prefWidth="30.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#clean" prefHeight="25.0" prefWidth="98.0" text="C" GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
